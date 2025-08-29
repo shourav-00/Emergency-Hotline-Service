@@ -113,10 +113,10 @@ for (const heart of hearts) {
     });
 }
 
-const clearBtn = document.getElementById("clear-btn");
-const historyDiv = document.getElementById("history");
+const clearBtn=document.getElementById("clear-btn");
+const historyDiv=document.getElementById("history");
 
 clearBtn.addEventListener("click", function() {
-    historyDiv.innerHTML = ""; 
+    historyDiv.innerHTML=""; 
 });
 
