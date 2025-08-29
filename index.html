@@ -35,17 +35,17 @@
       <!-- Right nav items -->
       <div class="flex items-center gap-2 sm:flex-nowrap ml-4 sm:gap-4 sm:ml-0">
         <div class="flex items-center gap-2  px-3 py-2 sm:px-3 sm:py-2 rounded-2xl bg-[#41ff6b1a]">
-          <h2>0</h2>
+          <h2 id="heart-count">0</h2>
           <img class="w-6 h-6" src="assets/heart.png" alt="">
         </div>
 
         <div class="flex items-center gap-2 px-3 py-2 rounded-2xl bg-[#41ff6b1a]">
-          <h2>0</h2>
+          <h2 id="coin-count">40</h2>
           <img class="w-6 h-6" src="assets/coin.png" alt="">
         </div>
 
         <button class="px-1.5 py-1.5 sm:px-4 sm:py-2 sm:gap-2 bg-[#00A63E] text-white rounded-2xl">
-          Add Me
+          <span id="copy-count" class="mr-1">0</span>Copy
         </button>
       </div>
     </div>
@@ -65,6 +65,7 @@
     </header>
 
     <!-- Main Content -->
+   
      <main class="bg-[#f5fff6]  overflow-x-hidden">
         <div class="max-w-7xl w-11/12 mx-auto grid grid-cols-12 md:gap-[30px] lg:gap-[30px] py-4 gap-4">
         
@@ -72,33 +73,33 @@
                 <div class= "border-[#00000026] bg-[#ffffff] border-2 md:p-8 p-4 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4"src="assets/emergency.png" alt=""> 
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">National Emergency Service</h2>
                     <p  class="mb-2 ">National Service</p>
-                    <h2 class="mb-1 font-bold">999</h2>
+                    <h2 class="mb-1 font-bold hot-num">999</h2>
                     <p class="mb-4">National</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl sm:w-[48%] md:w-[45%] lg:w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl md:w-[50%] lg:w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn mr-4 rounded-2xl sm:w-[48%] md:w-[45%] lg:w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class=" call-btn  bg-[#00A63E] rounded-2xl md:w-[50%] lg:w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/police.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Police Emergency Service </h2>
                     <p class="mb-2">Police Service</p>
-                    <h2 class="mb-1 font-bold">100</h2>
+                    <h2 class="mb-1 font-bold hot-num">100</h2>
                     <p class="mb-4">Security & Safety</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="call-btn bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                  <div class="flex gap-2">
     
-</div>
+                 </div>
 
 
 
@@ -106,111 +107,116 @@
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/ambulance.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold"> Ambulance Emergency Service</h2>
                     <p class="mb-2">Health Service</p>
-                    <h2 class="mb-1 font-bold">102</h2>
+                    <h2 class="mb-1 font-bold hot-num">102</h2>
                     <p class="mb-4">Health</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="call-btn bg-[#00A63E] rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/fire-service.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Fire Emergency Service</h2>
                     <p class="mb-2">Fire Service</p>
-                    <h2 class="mb-1 font-bold">101</h2>
+                    <h2 class="mb-1 font-bold hot-num">101</h2>
                     <p class="mb-4">Fire</p>
                     <div class="flex justify-between">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/emergency.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Mental Health Support</h2>
                     <p class="mb-2">Health Service</p>
-                    <h2 class="mb-1 font-bold">199</h2>
+                    <h2 class="mb-1 font-bold hot-num">199</h2>
                     <p class="mb-4">Health</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                       <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/Bangladesh-Railway.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
-                    <h2 class="mb-1 font-bold">Railway Emergency Service</h2>
+                    <h2 class="mb-1 font-bold hot-num">Railway Emergency Service</h2>
                     <p class="mb-2">Railway Service</p>
                     <h2 class="mb-1 font-bold">131</h2>
                     <p class="mb-4">Railway</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/download.png" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                   <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Bangladesh Bank Complain Service </h2>
                     <p class="mb-2">Bank Service</p>
-                    <h2 class="mb-1 font-bold">16236</h2>
+                    <h2 class="mb-1 font-bold hot-num">16236</h2>
                     <p class="mb-4">Bangladesh Bank</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button></button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#FFE3E2] h-[50px] w-[50px] mb-4" src="assets/109-service-in-bangladesh-logo-png_seeklogo-424697.png" alt="">
-                     <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Violence Against Women & Children Emergency Helpline</h2>
                     <p class="mb-2">Violence</p>
-                    <h2 class="mb-1 font-bold">1098</h2>
+                    <h2 class="mb-1 font-bold hot-num">1098</h2>
                     <p class="mb-4">Women & Children</p>
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E]  rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                       <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
                 <div class="bg-[#ffffff] border-[#00000026] border-2 p-8 rounded-2xl">
                     <div class="flex justify-between">
                     <img class="bg-[#f69692] h-[50px] w-[50px] mb-4"src="assets/airplane.webp" alt="">
-                    <p class="mt-3 h-14 w-12 test"><i class="fa-solid fa-heart"></i></p>
+                    <p class="mt-3 h-14 w-12 test heart-count"><i class="fa-solid fa-heart"></i></p>
                     </div>
                     <h2 class="mb-1 font-bold">Aviation Security Service Number</h2>
                     <p class="mb-2">Aviation Service</p>
-                    <h2 class="mb-1 font-bold">999</h2>
+                    <h2 class="mb-1 font-bold hot-num">999</h2>
                     <p class="mb-4">Travel</p>
                 
                     <div class="flex justify-between ">
-                        <button class="mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
-                        <button class="bg-[#00A63E] rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
+                        <button class="copy-btn  mr-4 rounded-2xl w-[50%] h-10 bg-[#bdbbbb]"><span class="mr-1"><i class="fa-regular fa-copy"></i></span>Copy</button>
+                        <button class="bg-[#00A63E] call-btn rounded-2xl w-[50%] h-10"><span class="mr-1"><i class="fa-solid fa-phone"></i></span>Call</button>
                     </div>
                 </div>
             </div>
-            <div class="md:col-span-3 col-span-5 md:p-6 p-3 md:flex rounded-2xl justify-between bg-[#ffffff] border-[#00000026] ">
-               
-                <h2 class="py-2 font-bold"><i class=" mr-2 fa-regular fa-clock"></i>Call History</h2>
-                <button class=" md:w-18 md:py-2 md:h-11 w-full h-9 bg-[#00A63E] text-white rounded-2xl md:my-0 my-2">Clear All</button>
-               
-            </div>
-        </div>
+        
+
+        <div class="md:col-span-3 col-span-5 md:p-6 p-3 rounded-2xl bg-[#ffffff] border-[#00000026] ">
+    <div class="flex justify-between items-center mb-2">
+        <h2 class="py-2 font-bold"><i class="mr-2 fa-regular fa-clock"></i>Call History</h2>
+        <button id="clear-btn" class="md:w-18 md:py-2 md:h-11 w-full h-9 bg-[#00A63E] text-white rounded-2xl md:my-0 my-2">Clear All</button>
+    </div>
+    <!-- div for entries -->
+    <div id="history" class="flex flex-col gap-2  overflow-y-auto rounded-2xl bg-[#FAFAFA] p-2"></div>
+</div>
+
     
      </main>
+     <script src="script.js"></script>
 </body>
 </html>
